@@ -1,0 +1,14 @@
+{
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "showArrow": true,
+  "colorGroups": [
+    { "query": "path:Concepts", "color": { "a": 1, "rgb": 5431378 } },
+    { "query": "path:Components", "color": { "a": 1, "rgb": 2201331 } },
+    { "query": "path:Decisions", "color": { "a": 1, "rgb": 16750848 } },
+    { "query": "path:Glossary", "color": { "a": 1, "rgb": 10233776 } },
+    { "query": "file:MOC", "color": { "a": 1, "rgb": 15022389 } }
+  ]
+}
