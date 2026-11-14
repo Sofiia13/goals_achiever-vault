@@ -7,8 +7,8 @@ path: backend/src/middlewares/auth.middleware.ts
 tags: [component, backend, security]
 related: [Auth Module]
 depends_on: [Prisma Data Layer]
-decided_by: [ADR-002 JWT Access and Refresh Tokens]
-sources: ["practical work 4: typed ontology relations"]
+decided_by: [ADR-002 JWT Access and Refresh Tokens, ADR-012 JWT Access Token with Opaque Rotating Refresh Token]
+sources: ["practical work 4: typed ontology relations", "practical work 5: record-adr ADR-012"]
 ---
 # Auth Middleware
 
@@ -21,3 +21,4 @@ Verifies the access token from the `Authorization: Bearer …` header and attach
 ## Relations
 - depends_on → [[Prisma Data Layer]]
 - decided_by → [[ADR-002 JWT Access and Refresh Tokens]]
+- decided_by → [[ADR-012 JWT Access Token with Opaque Rotating Refresh Token]]
