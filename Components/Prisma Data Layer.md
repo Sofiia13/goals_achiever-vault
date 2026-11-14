@@ -6,6 +6,8 @@ status: implemented
 path: backend/prisma/schema.prisma
 tags: [component, backend, database]
 related: [ADR-003 PostgreSQL with Prisma ORM, Goal, Task]
+decided_by: [ADR-003 PostgreSQL with Prisma ORM, ADR-011 Backend Unit Tests with Node Test Runner and Module Mocks]
+sources: ["practical work 5: record-adr ADR-011"]
 ---
 # Prisma Data Layer
 
@@ -19,3 +21,7 @@ DB schema, migrations and the typed client. Decision — [[ADR-003 PostgreSQL wi
 
 ## Files
 `backend/prisma/schema.prisma`, `backend/prisma/migrations/`, `backend/prisma/seed.ts`; the client is generated into `backend/src/generated/`, the instance is `backend/src/prisma.ts`.
+
+## Relations
+- decided_by → [[ADR-003 PostgreSQL with Prisma ORM]]
+- decided_by → [[ADR-011 Backend Unit Tests with Node Test Runner and Module Mocks]]
