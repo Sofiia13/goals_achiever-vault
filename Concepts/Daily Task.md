@@ -3,6 +3,8 @@ type: concept
 created: 2026-10-20
 tags: [concept, domain]
 related: [Task, Station, AI Plan Generation, Plan Adaptation]
+part_of: [Station]
+sources: ["practical work 4: typed ontology relations"]
 ---
 # Daily Task
 
@@ -16,3 +18,6 @@ A small task for today that moves the user closer to the current [[Station]]. Ge
 
 ## Implemented in
 [[AI Module]] (`POST /ai/daily-tasks`), [[Task Module]] (`GET /tasks/goals/:goalId/daily-tasks`).
+
+## Relations
+- part_of → [[Station]]
