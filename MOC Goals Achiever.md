@@ -54,6 +54,7 @@ Single entry point to the knowledge base about Goals Achiever — a web app for 
 - [[ADR-003 PostgreSQL with Prisma ORM]]
 - [[ADR-004 Separate Knowledge Base Repository]]
 - [[ADR-005 Stations and Daily Tasks in One Task Table]]
+- [[ADR-006 CORS Allowlist with Origin Patterns]]
 
 ## 4. Glossary
 - [[Glossary]]
