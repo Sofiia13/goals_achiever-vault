@@ -6,6 +6,9 @@ status: partial
 path: backend/src/modules/goal/
 tags: [component, backend]
 related: [Goal, Task Module, AI Module]
+depends_on: [Auth Middleware, Prisma Data Layer]
+implements: [Goal]
+sources: ["practical work 4: typed ontology relations"]
 ---
 # Goal Module
 
@@ -26,3 +29,8 @@ Editing a goal (`PATCH /:id`) — requirement #2, not implemented yet.
 
 ## Dependencies
 [[Prisma Data Layer]]
+
+## Relations
+- depends_on → [[Auth Middleware]]
+- depends_on → [[Prisma Data Layer]]
+- implements → [[Goal]]
