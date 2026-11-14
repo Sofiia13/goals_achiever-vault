@@ -6,6 +6,9 @@ status: implemented
 path: backend/src/services/streak/streak.service.ts
 tags: [component, backend, gamification]
 related: [Streak, Task Module]
+depends_on: [Prisma Data Layer]
+implements: [Streak]
+sources: ["practical work 4: typed ontology relations"]
 ---
 # Streak Service
 
@@ -14,3 +17,7 @@ Implements the [[Streak]] algorithm: `updateUserStreak(userId)` recalculates `cu
 
 ## Called from
 [[Task Module]] when a task becomes `done`.
+
+## Relations
+- depends_on → [[Prisma Data Layer]]
+- implements → [[Streak]]
