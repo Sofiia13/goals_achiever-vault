@@ -45,6 +45,9 @@ Single entry point to the knowledge base about Goals Achiever — a web app for 
 - [[Auth Context]]
 - [[Roadmap View]]
 
+### Frontend
+- [[Achievement Notifier]]
+
 ## 3. Architecture decisions
 - [[ADR-001 Google Gemini as AI Provider]]
 - [[ADR-002 JWT Access and Refresh Tokens]]
