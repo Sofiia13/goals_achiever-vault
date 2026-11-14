@@ -6,6 +6,10 @@ status: implemented
 path: backend/src/modules/ai/
 tags: [component, backend, ai]
 related: [AI Plan Generation, Plan Adaptation, Daily Task, ADR-001 Google Gemini as AI Provider]
+depends_on: [Auth Middleware, Prisma Data Layer]
+implements: [AI Plan Generation, Plan Adaptation]
+decided_by: [ADR-001 Google Gemini as AI Provider]
+sources: ["practical work 4: typed ontology relations"]
 ---
 # AI Module
 
@@ -29,3 +33,10 @@ Integration with Google Gemini (`@google/genai`, model `gemini-2.5-flash`) for [
 ## Known issues
 - Debug logs print the API key prefix to the console — remove them.
 - JSON is parsed without schema validation.
+
+## Relations
+- depends_on → [[Auth Middleware]]
+- depends_on → [[Prisma Data Layer]]
+- implements → [[AI Plan Generation]]
+- implements → [[Plan Adaptation]]
+- decided_by → [[ADR-001 Google Gemini as AI Provider]]
