@@ -6,6 +6,8 @@ status: implemented
 path: backend/src/modules/auth/
 tags: [component, backend, security]
 related: [Auth Middleware, User Module, ADR-002 JWT Access and Refresh Tokens]
+decided_by: [ADR-012 JWT Access Token with Opaque Rotating Refresh Token]
+sources: ["practical work 5: record-adr ADR-012"]
 ---
 # Auth Module
 
@@ -25,6 +27,9 @@ Registration, login, token refresh and fetching the current user.
 
 ## Dependencies
 [[Prisma Data Layer]] (`User` model, `refreshToken` field).
+
+## Relations
+- decided_by → [[ADR-012 JWT Access Token with Opaque Rotating Refresh Token]]
 
 ## Related
 [[Auth Middleware]] · [[Auth Context]]
