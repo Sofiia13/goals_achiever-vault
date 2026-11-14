@@ -6,6 +6,10 @@ status: implemented
 path: backend/src/modules/task/
 tags: [component, backend]
 related: [Task, Station, Daily Task, Streak Service, User Module]
+depends_on: [Auth Middleware, Prisma Data Layer, Streak Service, User Module, AI Module]
+implements: [Task, Daily Task]
+decided_by: [ADR-005 Stations and Daily Tasks in One Task Table]
+sources: ["practical work 4: typed ontology relations"]
 ---
 # Task Module
 
@@ -27,3 +31,13 @@ Managing [[Task|tasks]], status changes and the related gamification side effect
 
 ## Risk
 Side effects run as separate queries without a transaction — a failure can desync coins and status.
+
+## Relations
+- depends_on → [[Auth Middleware]]
+- depends_on → [[Prisma Data Layer]]
+- depends_on → [[Streak Service]]
+- depends_on → [[User Module]]
+- depends_on → [[AI Module]]
+- implements → [[Task]]
+- implements → [[Daily Task]]
+- decided_by → [[ADR-005 Stations and Daily Tasks in One Task Table]]
