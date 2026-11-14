@@ -55,6 +55,7 @@ Single entry point to the knowledge base about Goals Achiever — a web app for 
 - [[ADR-004 Separate Knowledge Base Repository]]
 - [[ADR-005 Stations and Daily Tasks in One Task Table]]
 - [[ADR-006 CORS Allowlist with Origin Patterns]]
+- [[ADR-007 MCP Connectors for Knowledge Base Access]]
 
 ## 4. Glossary
 - [[Glossary]]
