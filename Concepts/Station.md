@@ -4,6 +4,8 @@ created: 2026-10-20
 aliases: [Milestone]
 tags: [concept, domain, roadmap]
 related: [Goal, Daily Task, Roadmap, AI Plan Generation]
+part_of: [Goal]
+sources: ["practical work 4: typed ontology relations"]
 ---
 # Station
 
@@ -18,3 +20,6 @@ An intermediate milestone on the way to a [[Goal]] — a "stop" on the [[Roadmap
 
 ## Implemented in
 [[Task Module]] (`/stations/:stationTitle/progress`), [[AI Module]] (`getProgressInfo`), [[Roadmap View]].
+
+## Relations
+- part_of → [[Goal]]
