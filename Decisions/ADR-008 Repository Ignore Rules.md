@@ -4,7 +4,7 @@ created: 2026-11-14
 status: accepted
 tags: [decision, adr, repository, security]
 related: [ADR-004 Separate Knowledge Base Repository]
-sources: ["PR #1 (initial commit, merged 2025-11-15)"]
+sources: ["PR #1 (initial commit, merged 2025-11-15)", "PR #2 (Dev, merged 2025-11-15)"]
 ---
 # ADR-008 Repository Ignore Rules
 
@@ -20,6 +20,11 @@ The root `.gitignore` is the only ignore file. The minimum rule is that secrets 
 ## Consequences
 - Dependencies were committed (`backend/node_modules`), which made the repository bigger and the diffs noisy.
 - OS and editor files (`.DS_Store`) and build output (`dist`) are not ignored.
+
+## Update — PR #2
+PR #2 "Dev" (merged 2025-11-15, commits `3429c48` "add node_modules to .gitignore" and `da97605` "fix gitignore") added `node_modules/` to `.gitignore` and removed the tracked `node_modules/**` from the index. The current rules are `.env` and `node_modules/`.
+
+**Still open:** `.DS_Store`, `dist/` and `*.log` are not ignored. That is why `.DS_Store` files still appear in `git status` and in commits. Proposed fix: add `.DS_Store`, `dist/`, `*.log` and `.vscode/*` to the root `.gitignore`, then run `git rm --cached` on the `.DS_Store` files that are already tracked.
 
 ## Related
 - [[ADR-004 Separate Knowledge Base Repository]]
