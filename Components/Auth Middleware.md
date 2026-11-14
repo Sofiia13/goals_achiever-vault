@@ -6,6 +6,9 @@ status: implemented
 path: backend/src/middlewares/auth.middleware.ts
 tags: [component, backend, security]
 related: [Auth Module]
+depends_on: [Prisma Data Layer]
+decided_by: [ADR-002 JWT Access and Refresh Tokens]
+sources: ["practical work 4: typed ontology relations"]
 ---
 # Auth Middleware
 
@@ -14,3 +17,7 @@ Verifies the access token from the `Authorization: Bearer …` header and attach
 
 ## Used by
 [[Goal Module]] · [[Task Module]] · [[AI Module]] · [[User Module]]
+
+## Relations
+- depends_on → [[Prisma Data Layer]]
+- decided_by → [[ADR-002 JWT Access and Refresh Tokens]]
