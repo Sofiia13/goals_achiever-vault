@@ -58,6 +58,7 @@ Single entry point to the knowledge base about Goals Achiever — a web app for 
 - [[ADR-007 MCP Connectors for Knowledge Base Access]]
 - [[ADR-008 Repository Ignore Rules]]
 - [[ADR-009 Runtime Document Title and Favicon]]
+- [[ADR-010 Ignore OS, Editor and Build Files]]
 
 ## 4. Glossary
 - [[Glossary]]
